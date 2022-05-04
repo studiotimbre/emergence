@@ -6,11 +6,33 @@
   <meta name="viewport" content="width=device-width">
   <title>emergence</title>
  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400&display=swap');
 
   body {
     font-family: 'Fraunces', serif;
   }
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #00297a;
+}
+
+a:visited {
+  color: #00297a;
+}
+
+a:hover {
+  color: #0080cc;
+}
+
+a:active {
+  color: #0080cc;
+}
 
    div.headline {
      float:left;
@@ -49,6 +71,12 @@ div.paragraphs {
       }
  </style>
 
+<script>
+var time = ""
+function seekTo(time) {
+  document.getElementById("recording").src = "https://www.youtube.com/embed/B0AKSNhGXB4"+time+"&autoplay=1";
+}
+  </script>
 
 </head>
 
@@ -73,34 +101,32 @@ With sound, Kimberly paints imagery and expands emotions of her pianistic journe
 </section>
   
 <div style="text-align:center;position:relative;width:100%;padding-bottom:56.25%;">
-  <iframe src="https://www.youtube.com/embed/B0AKSNhGXB4" title="emergence recital" allowfullscreen style="position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
-
+  <iframe id="recording" src="https://www.youtube.com/embed/B0AKSNhGXB4?start=00001" title="emergence recital" allowfullscreen style="position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
 </div>
 
 <section style="background-color:white;color:black;text-align:center;">
 
 <div style="padding-top:50px;margin:auto;padding-right:20px; padding-left:20px;max-width:500px;">
   <h2 style="text-align:center;font-weight:bold;">PROGRAM</h2>
-  <p><span style="float:left;text-align:left;">Andante spianato et <br>grande polonaise brillante, Op. 22</span><span style="float:right;padding-left:40px;">Frédéric Chopin</span></p>
+  <p><span style="float:left;text-align:left;"><a href="#recording" onclick="seekTo('?start=00001')">Andante spianato et</a><br><a href="#recording" onclick="seekTo('?start=320')">grande polonaise brillante, Op. 22</a></span><span style="float:right;padding-left:40px;">Frédéric Chopin</span></p>
+
+<br style="clear:both"><br>
+<p><span style="float:left;text-align:left;"><a href="#recording" onclick="seekTo('?start=320')">Piano Sonata No. 23 in F Minor<br>"Appassionata"</a></span><span style="float:right;padding-left:25px;">Ludwig van Beethoven</span></p>
 
 <br style="clear:both">
+<p style="text-align:left;padding-left:3em;line-height:1.5em;"><a href="#recording" onclick="seekTo('?start=981')">I. Allegro assai</a><br>
+<a href="#recording" onclick="seekTo('?start=1600')">II. Andante con moto</a><br>
+<a href="#recording" onclick="seekTo('?start=1843')">III. Allegro ma non troppo</a></p>
 <br>
-    <p><span style="float:left;text-align:left;">Piano Sonata No. 23 in F Minor<br>"Appassionata"</span><span style="float:right;padding-left:25px;">Ludwig van Beethoven</span></p>
-    
+<p><span style="float:left;text-align:left;"><a href="#recording" onclick="seekTo('?start=2160')">Étude-tableau Op. 39 No. 2</a>
+</span><span style="float:right;padding-left:25px;">Sergei Rachmaninoff</span></p>
 
-<br style="clear:both">
-<br>
-<p><span style="float:left">Étude-tableau Op. 39 No. 2</span><span style="float:right;padding-left:25px;">Sergei Rachmaninoff</span></p>
-
-<br style="clear:both">
-                      <br>
-<p><span style="float:left">Étude-tableau Op. 39 No. 3</span><span style="float:right;padding-left:25px;">Sergei Rachmaninoff</span></p>
-<br style="clear:both">
-                      <br>
-<p><span style="float:left;text-align:left;">Gaspard de la Nuit<br>I. Ondine</span><span style="float:right;padding-left:25px;">Maurice Ravel</span></p>
-<br style="clear:both">
-                      <br>
-<p><span style="float:left">"emergence"</span><span style="float:right;padding-left:25px;">Kimberly Hunt</span></p>
+<br style="clear:both"><br>
+<p><span style="float:left"><a href="#recording" onclick="seekTo('?start=2554')">Étude-tableau Op. 39 No. 3</a></span><span style="float:right;padding-left:25px;">Sergei Rachmaninoff</span></p>
+<br style="clear:both"><br>
+<p><span style="float:left;text-align:left;"><a href="#recording" onclick="seekTo('?start=2793')">Gaspard de la Nuit<br>I. Ondine</a></span><span style="float:right;padding-left:25px;">Maurice Ravel</span></p>
+<br style="clear:both"><br>
+<p><span style="float:left"><a href="#recording" onclick="seekTo('?start=3237')">"emergence"</a></span><span style="float:right;padding-left:25px;">Kimberly Hunt</span></p>
   </div>
 
 <div class="paragraphs">
